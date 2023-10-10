@@ -6,7 +6,7 @@ import KiteLogo from "./images/KiTE Logo copy.png"
 export default function Contact() {
   return (
 
-    <div className="Contact">
+    <div className="Contact" id='contact'>
       
       <div className="contact-content">
         <img  className="kiteLogo" src={KiteLogo} alt="" />
