@@ -1,23 +1,20 @@
 import React from "react";
-import "./HeadOfKite.css"; // Create a CSS file for styling
-
+import "./HeadOfKite.css"; 
+import HOD from "./images/HOD.jpg"
 function HeadOfKite() {
   const teamMembers = [
+    {
+      name: "Dr.T.Thenmozhi",
+      position: "HOD/CSE,  KiTE",
+      imageSrc: HOD, 
+    },
     {
       name: "Dr.S.Suresh Kumar",
       position: "PRINCIPAL,  KiTE",
       imageSrc: "https://www.kgkite.ac.in/wp-content/uploads/2023/06/Principal-KiTE-3.jpeg", // Add the image file path
     },
-    // {
-    //   name: "Mr Suresh",
-    //   position: "Principal",
-    //   imageSrc: "https://cdn.pixabay.com/photo/2015/01/06/16/14/woman-590490_640.jpg", // Add the image file path
-    // },
-    {
-      name: "Dr.T.Thenmozhi",
-      position: "HOD/CSE,  KiTE",
-      imageSrc: "https://www.kgkite.ac.in/wp-content/uploads/2023/01/Dr.-Thenmozhi-T-CSE-HOD.jpeg", // Add the image file path
-    },
+
+
   ];
 
   return (

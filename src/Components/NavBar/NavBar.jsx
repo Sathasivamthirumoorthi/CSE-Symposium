@@ -26,10 +26,10 @@ function NavBar() {
             <div className="logo"><img src={logoName} alt="" className="logoName" /></div>
       </div>
       <div className={`nav-center ${isMobileNavOpen ? "show" : ""}`}>
-        <a className="nav-atag" href="/#" onClick={closeMobileNav}>HOME</a>
-        <a className="nav-atag" href="/#" onClick={closeMobileNav}>EVENT</a>
-        <a className="nav-atag" href="/#" onClick={closeMobileNav}>POSTER</a>
-        <a className="nav-atag" href="/#" onClick={closeMobileNav}>CONTACT</a>
+        <a className="nav-atag" href="#home" onClick={closeMobileNav}>HOME</a>
+        <a className="nav-atag" href="#event" onClick={closeMobileNav}>EVENT</a>
+        <a className="nav-atag" href="#post" onClick={closeMobileNav}>POSTER</a>
+        <a className="nav-atag" href="#contact" onClick={closeMobileNav}>CONTACT</a>
       </div>
       <div className="nav-right">
         <motion.div

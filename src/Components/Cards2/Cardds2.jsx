@@ -1,47 +1,60 @@
 import React from 'react';
 import "./Cards2.css";
-import Curio from "./images/CURIOPROMPT wo qr.png";
-import Pixel from "./images/pixel forge wo qr.png";
-import shortFilm from "./images/IMG-20231005-WA0004.jpg";
-import Meme from "./images/memelast.png"
-import PhotoGraphy from "./images/PHOTOGRAPHY EVENT(SS).png"
+import Curio from "./images/CURIOPROMPT.jpg";
+import Pixel from "./images/PIXEL FORGE.jpg";
+import shortFilm from "./images/SHORT FILM.jpg";
+import Meme from "./images/MEME MASTER.jpg"
+import PhotoGraphy from "./images/PHOTOGRAPHY.jpg"
 
 function Cards2() {
     
   
     const cardsData = [
         {
-            id: 3,
+            id: 1,
             imageSrc:Curio,
             title: ' Curio Prompt',
-            text: 'This is the event conducted by the CSE departmnet of Kgisl Institute of technology'
+            text: ' Let your imagination soar by weaving captivating stories inspired by thought-provoking prompts. Explore the uncharted realms of creativity with your words.'
           },
           {
-            id: 3,
+            id: 2,
             imageSrc: Pixel,
             title: ' Pixel Forge',
-            text: 'This is the event conducted by the CSE darptmnet of Kgisl Institute of technology'
+            text: 'Unleash your creative spirit and design visually captivating posters that convey powerful messages. Transform your ideas into stunning visuals.'
           },
           {
             id: 3,
             imageSrc: shortFilm,
             title: ' Short Film',
-            text: 'This is the event conducted by the CSE darptmnet of Kgisl Institute of technology'
+            text: ' Condense the magic of storytelling into short films. Craft narratives that leave a lasting impact and take your audience on a cinematic journey. '
           },
           {
-            id: 3,
+            id: 4,
             imageSrc: Meme,
             title: ' Meme Master',
-            text: 'This is the event conducted by the CSE darptmnet of Kgisl Institute of technology'
+            text: 'Turn your humor and wit into a creative outlet. Craft memorable memes that entertain, provoke thought, and, most importantly, make people laugh.'
           },
           {
-            id: 3,
+            id: 5,
             imageSrc: PhotoGraphy,
             title: ' PhotoGraphy',
-            text: 'This is the event conducted by the CSE darptmnet of Kgisl Institute of technology'
+            text: ' Capture the essence of the world through your lens. From the ordinary to the extraordinary, tell compelling stories through your photographs.'
           },
 
     ];
+
+    const pdfFileUrl = 'https://drive.google.com/file/d/11ntn5GKhS52FwkShOkCWbOOjsjJU3zqv/view?usp=drive_link'; 
+
+
+    const handleDownload = () => {
+      const link = document.createElement('a');
+      link.href = pdfFileUrl;
+      link.target = '_blank'; 
+      link.rel = 'noopener noreferrer'; 
+      link.download = 'example.pdf'; 
+  
+      link.click();
+    };
   
 
   return (
@@ -58,6 +71,7 @@ function Cards2() {
             <div className="card-body">
                   <h3 className="card-title">{card.title}</h3>
                   <p className="card-text">{card.text}</p>
+                  <button onClick={handleDownload} className='card-button but2'>Details</button>
                   < a href="https://tinyurl.com/Cynosure2k23-Reg" ><button className='card-button'>Register</button></a>
                 </div>
             </div>
